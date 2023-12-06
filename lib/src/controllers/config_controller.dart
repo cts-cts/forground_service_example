@@ -20,7 +20,9 @@ class ConfigController extends GetxController {
   }
 
   void initAppConfig() {
-    Base.forgroundService;
+    // Base.forgroundService;
+    Base.hiveService;
+
     klog('App Config');
   }
 }

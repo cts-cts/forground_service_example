@@ -1,6 +1,7 @@
 import 'package:forground_service_example/src/controllers/config_controller.dart';
 import 'package:forground_service_example/src/controllers/user_controller.dart';
 import 'package:forground_service_example/src/services/forground_service.dart';
+import 'package:forground_service_example/src/services/hive_service.dart';
 import 'package:get/get.dart';
 
 class Base {
@@ -11,6 +12,7 @@ class Base {
   // ---------------------------------------------------------
 
   // Services
+  static final hiveService = Get.find<HiveService>();
   static final forgroundService = Get.find<ForgroundService>();
   // ---------------------------------------------------------
 }
